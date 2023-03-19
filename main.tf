@@ -101,8 +101,6 @@ module "database" {
   source              = "./modules/database"
   location            = "eastus"
   resource_group_name = "N01520500-assignment1-RG"
-  admin_username   = "Kavya"
-  admin_password   = "Kavya@1101"
   tags                = var.tags
   
 }
