@@ -19,14 +19,6 @@ variable "db_storage_mb" {
   default     = 5120
 }
 
-variable "admin_username" {
-  default = "Kavya"
-}
-
-variable "admin_password" {
-  default = "Kavya@1101"
-}
-
 variable "server_name" {
   type    = string
   default = "my-postgresql-server"
