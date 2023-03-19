@@ -21,7 +21,7 @@ resource "azurerm_virtual_machine_data_disk_attachment" "linux_data_disk" {
 
 #Windows data disk
 resource "azurerm_virtual_machine_data_disk_attachment" "data_disk_windows" {
-  managed_disk_id = azurerm_virtual_machine_data_disk_attachment.data_disk_windows.id
+  managed_disk_id = azurerm_managed_disk.data_disk[2].id
   virtual_machine_id = var.vmwindows_id
   lun               = var.lun
   caching           = var.data_disk_caching
