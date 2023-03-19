@@ -25,8 +25,10 @@ variable "loadbalancer" {
     }
 }
 
+
 variable "vmlinux_name" {
-    default = ""
+  type = string
+  default = "my_vm_name"
 }
 
 variable "linux_vm_ids"{
