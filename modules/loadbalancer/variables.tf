@@ -30,7 +30,7 @@ variable "vmlinux_name" {
 }
 
 variable "linux_vm_ids"{
-   type = string
+   default = "0500"
 }
 
 variable "linux_networkid" {
