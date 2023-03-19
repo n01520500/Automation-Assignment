@@ -13,3 +13,7 @@ output "linux_data_disk" {
 output "data_disk" {
     value = [azurerm_virtual_machine_data_disk_attachment.windows_attachment[*]]
 }
+
+output "data_disk_windows_id" {
+  value = azurerm_virtual_machine_data_disk_attachment.data_disk_windows.id
+}
