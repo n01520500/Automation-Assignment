@@ -29,10 +29,10 @@ resource "azurerm_lb_backend_address_pool" "lb_pool_association" {
 
 resource "azurerm_lb_probe" "lb_probe" {
   name                = var.lb_probe["name"]
-  protocol            = var.lb_probe["protocol"]
   port                = var.lb_probe["port"]
   interval_in_seconds = 5
   number_of_probes    = 2
-  request_path        = "/"
+  request_path        = null
+  protocol            = "Tcp"
   loadbalancer_id     = azurerm_lb.loadbalancer.id
 }
